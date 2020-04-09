@@ -1,0 +1,25 @@
+{
+    "name": "rusli-nasir/yii2-inspinia",
+    "description": "Inspinia template widgets",
+    "type": "yii2-extension",
+    "keywords": ["yii2", " inspinia", " assets", " widgets"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "caige",
+            "email": "caige@caige.com"
+        },
+        {
+            "name": "rusli",
+            "email": "rusli.nasir.m@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "dxapp\\themes\\inspinia\\": ""
+        }
+    }
+}
