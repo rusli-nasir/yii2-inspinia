@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: graph_flot.html widgets.html
  * @package dxapp\themes\inspinia
  */
-class FlotAsset extends \yii\web\AssetBundle
+class FlotAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $js = [
         'js/plugins/flot/jquery.flot.js',
         'js/plugins/flot/jquery.flot.tooltip.min.js',

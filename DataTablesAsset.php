@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: table_data_tables.html
  * @package dxapp\themes\inspinia
  */
-class DataTablesAsset extends \yii\web\AssetBundle
+class DataTablesAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $css = [
         'css/plugins/dataTables/datatables.min.css'
     ];

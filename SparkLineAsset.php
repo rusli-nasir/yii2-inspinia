@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: graph_sparkline.html
  * @package dxapp\themes\inspinia
  */
-class SparkLineAsset extends \yii\web\AssetBundle
+class SparkLineAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $js = [
         'js/plugins/sparkline/jquery.sparkline.min.js'
     ];

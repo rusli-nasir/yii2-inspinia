@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: table_foo_table.html
  * @package dxapp\themes\inspinia
  */
-class FootableAsset extends \yii\web\AssetBundle
+class FootableAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $css = [
         'css/plugins/footable/footable.core.css'
     ];

@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: form_editors.html
  * @package dxapp\themes\inspinia
  */
-class SummerNoteAsset extends \yii\web\AssetBundle
+class SummerNoteAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $css = [
         'css/plugins/summernote/summernote.css',
         'css/plugins/summernote/summernote-bs3.css'

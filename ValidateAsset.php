@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: validation.html
  * @package dxapp\themes\inspinia
  */
-class ValidateAsset extends \yii\web\AssetBundle
+class ValidateAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $js = [
         'js/plugins/validate/jquery.validate.min.js'
     ];

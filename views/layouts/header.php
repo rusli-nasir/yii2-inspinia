@@ -1,9 +1,11 @@
 <?php
 use yii\helpers\Url;
+
+$user = \Yii::$app->user;
 ?>
 <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
 
-    <?php if(!\Yii::$app->user->isGuest): ?>
+    <?php if(!$user->isGuest): ?>
     <div class="navbar-header">
         <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
         <form role="search" class="navbar-form-custom" action="/search">
@@ -16,11 +18,11 @@ use yii\helpers\Url;
 
     <ul class="nav navbar-top-links navbar-right">
         <li>
-            <?php if(!\Yii::$app->user->isGuest): ?>
-            <span class="m-r-sm text-muted welcome-message">你好, <?=\Yii::$app->user->identity->username?></span>
+            <?php if(!$user->isGuest): ?>
+            <span class="m-r-sm text-muted welcome-message"><?= Yii::t('app','hellow')?>, <?=$user->identity->username?></span>
             <?php endif?>
         </li>
-        <?php if(!\Yii::$app->user->isGuest): ?>
+        <?php if(!$user->isGuest): ?>
         <li class="dropdown">
             <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
                 <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
@@ -118,16 +120,16 @@ use yii\helpers\Url;
         </li>
         <?php endif?>
 
-        <?php if(\Yii::$app->user->isGuest):?>
+        <?php if($user->isGuest):?>
         <li>
             <a href="<?=Url::to(['/user/login'])?>">
-                <i class="fa fa-sign-in"></i> 登入
+                <i class="fa fa-sign-in"></i> <?= Yii::t('app','sign_in')?>
             </a>
         </li>
         <?php else:?>
         <li>
             <a href="<?=Url::to(['/user/logout'])?>" data-method="post">
-                <i class="fa fa-sign-out"></i> 退出
+                <i class="fa fa-sign-out"></i> <?= Yii::t('app','sign_out')?>
             </a>
         </li>
 

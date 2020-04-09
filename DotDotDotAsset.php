@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: truncate.html
  * @package dxapp\themes\inspinia
  */
-class DotDotDotAsset extends \yii\web\AssetBundle
+class DotDotDotAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $css = [
         'css/plugins/daterangepicker/daterangepicker-bs3.css'
     ];

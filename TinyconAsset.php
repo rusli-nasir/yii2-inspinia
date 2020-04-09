@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: tinycon.html
  * @package dxapp\themes\inspinia
  */
-class TinyconAsset extends \yii\web\AssetBundle
+class TinyconAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $js = [
         'js/plugins/tinycon/tinycon.min.js'
     ];

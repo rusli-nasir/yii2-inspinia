@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: video.html
  * @package dxapp\themes\inspinia
  */
-class VideoAsset extends \yii\web\AssetBundle
+class VideoAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $js = [
         'js/plugins/video/responsible-video.js'
     ];

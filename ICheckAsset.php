@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: form_advanced.html
  * @package dxapp\themes\inspinia
  */
-class ICheckAsset extends \yii\web\AssetBundle
+class ICheckAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $css = [
         'css/plugins/iCheck/custom.css'
     ];

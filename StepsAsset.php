@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: form_wizard.html
  * @package dxapp\themes\inspinia
  */
-class StepsAsset extends \yii\web\AssetBundle
+class StepsAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $css = [
         'css/plugins/steps/jquery.steps.css'
     ];

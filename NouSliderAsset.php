@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: tree_view.html
  * @package dxapp\themes\inspinia
  */
-class NousliderAsset extends \yii\web\AssetBundle
+class NousliderAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $css = [
         'css/plugins/nouslider/jquery.nouislider.css'
     ];    

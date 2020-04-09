@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: slick_carousel.html
  * @package dxapp\themes\inspinia
  */
-class SlickAsset extends \yii\web\AssetBundle
+class SlickAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $css = [
         'css/plugins/slick/slick.css',
         'css/plugins/slick/slick-theme.css'

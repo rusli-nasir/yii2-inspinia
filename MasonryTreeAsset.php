@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: masonry.html
  * @package dxapp\themes\inspinia
  */
-class MasonryTreeAsset extends \yii\web\AssetBundle
+class MasonryTreeAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $js = [
         'js/plugins/masonary/masonry.pkgd.min.js'
     ];

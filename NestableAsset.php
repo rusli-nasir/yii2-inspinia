@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: nestable_list.html
  * @package dxapp\themes\inspinia
  */
-class NestableAsset extends \yii\web\AssetBundle
+class NestableAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $js = [
         'js/plugins/nestable/jquery.nestable.js'
     ];

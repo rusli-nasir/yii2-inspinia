@@ -10,7 +10,7 @@ use yii\widgets\Breadcrumbs;
 use yii\bootstrap\Alert;
 
 AppAsset::register($this);
-$directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/lkk/yii2-inspinia/assets');
+$directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/rusli-nasir/yii2-inspinia/assets');
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -42,8 +42,7 @@ $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/lkk/yii2-ins
                 <div class="col-sm-<?= isset($this->blocks['content-header-actions']) ? 6 : 12 ?>">
                     <h2><?= $this->title ?></h2>
 
-                    <?=
-                    Breadcrumbs::widget([
+                    <?= Breadcrumbs::widget([
                         'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
                         'activeItemTemplate' => "<li class=\"active\"><strong>{link}</strong></li>\n"
                     ])

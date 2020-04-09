@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: diff.html
  * @package dxapp\themes\inspinia
  */
-class DiffAsset extends \yii\web\AssetBundle
+class DiffAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $js = [
         'js/plugins/diff_match_patch/javascript/diff_match_patch.js',
         'js/plugins/preetyTextDiff/jquery.pretty-text-diff.min.js'

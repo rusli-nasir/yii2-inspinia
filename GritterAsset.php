@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: index.html
  * @package dxapp\themes\inspinia
  */
-class GritterAsset extends \yii\web\AssetBundle
+class GritterAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $css = [
         'js/plugins/gritter/jquery.gritter.css'
     ];

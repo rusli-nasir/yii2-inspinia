@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: form_advanced.html
  * @package dxapp\themes\inspinia
  */
-class CropperAsset extends \yii\web\AssetBundle
+class CropperAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $css = [
         'css/plugins/cropper/cropper.min.css'
     ];

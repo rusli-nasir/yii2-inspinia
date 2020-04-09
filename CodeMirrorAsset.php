@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: code_editor.html
  * @package dxapp\themes\inspinia
  */
-class CodeMirrorAsset extends \yii\web\AssetBundle
+class CodeMirrorAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $css = [
         'css/plugins/codemirror/codemirror.css',
         'css/plugins/codemirror/ambiance.css'

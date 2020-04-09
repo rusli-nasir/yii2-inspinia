@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: form_advanced.html
  * @package dxapp\themes\inspinia
  */
-class DataPickerAsset extends \yii\web\AssetBundle
+class DataPickerAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $css = [
         'css/plugins/datapicker/datepicker3.css'
     ];

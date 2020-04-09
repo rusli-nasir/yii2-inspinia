@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: dashboard_2.html
  * @package dxapp\themes\inspinia
  */
-class EasyPieChartAsset extends \yii\web\AssetBundle
+class EasyPieChartAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $js = [
         'js/plugins/easypiechart/jquery.easypiechart.js'
     ];

@@ -6,9 +6,9 @@ namespace dxapp\themes\inspinia;
  *
  * @package dxapp\themes\inspinia
  */
-class FontawesomeAsset extends \yii\web\AssetBundle
+class FontawesomeAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+   
     public $css = [
         'font-awesome/css/font-awesome.min.css'
     ];

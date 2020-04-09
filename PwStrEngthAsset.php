@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: password_meter.html
  * @package dxapp\themes\inspinia
  */
-class PwStrEngthAsset extends \yii\web\AssetBundle
+class PwStrEngthAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $css = [
         'css/plugins/textSpinners/spinners.css'
     ];    

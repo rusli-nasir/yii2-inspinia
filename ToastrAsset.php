@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: toastr_notifications.html
  * @package dxapp\themes\inspinia
  */
-class ToastrAsset extends \yii\web\AssetBundle
+class ToastrAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $css = [
         'css/plugins/toastr/toastr.min.css'
     ];

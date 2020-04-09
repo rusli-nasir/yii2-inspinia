@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: tree_view.html
  * @package dxapp\themes\inspinia
  */
-class JsTreeAsset extends \yii\web\AssetBundle
+class JsTreeAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $css = [
         'css/plugins/jsTree/style.min.css'
     ];    

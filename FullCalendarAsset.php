@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: calendar.html
  * @package dxapp\themes\inspinia
  */
-class FullCalendarAsset extends \yii\web\AssetBundle
+class FullCalendarAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $css = [
         'ss/plugins/fullcalendar/fullcalendar.css',
         'css/plugins/fullcalendar/fullcalendar.print.css'

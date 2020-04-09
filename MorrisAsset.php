@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: graph_morris.html
  * @package dxapp\themes\inspinia
  */
-class MorrisAsset extends \yii\web\AssetBundle
+class MorrisAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $css = [
         'css/plugins/morris/morris-0.4.3.min.css'
     ];    

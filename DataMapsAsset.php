@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: datamaps.html
  * @package dxapp\themes\inspinia
  */
-class DataMapsAsset extends \yii\web\AssetBundle
+class DataMapsAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $js = [
         'js/plugins/typehead/bootstrap3-typeahead.min.js',
         'js/plugins/d3/d3.min.js',

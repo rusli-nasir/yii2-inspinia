@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: idle_timer.html
  * @package dxapp\themes\inspinia
  */
-class IdleTimerAsset extends \yii\web\AssetBundle
+class IdleTimerAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $js = [
         'js/plugins/idle-timer/idle-timer.min.js'
     ];

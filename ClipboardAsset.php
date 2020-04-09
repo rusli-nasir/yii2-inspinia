@@ -7,9 +7,9 @@ namespace dxapp\themes\inspinia;
  * Demo: clipboard.html
  * @package dxapp\themes\inspinia
  */
-class ClipboardAsset extends \yii\web\AssetBundle
+class ClipboardAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    
     public $js = [
         'js/plugins/clipboard/clipboard.min.js'
     ];
