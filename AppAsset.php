@@ -5,7 +5,7 @@ namespace dxapp\themes\inspinia;
 
 class AppAsset extends BaseAsset
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    public $sourcePath = '@vendor/rusli-nasir/yii2-inspinia/assets';
     public $css = [
         'css/animate.css',
         'css/style.css'

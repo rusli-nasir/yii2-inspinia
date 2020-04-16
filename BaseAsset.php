@@ -4,7 +4,7 @@ namespace dxapp\themes\inspinia;
 
 use yii\web\AssetBundle;
 
-class AppAsset extends AssetBundle
+class BaseAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/lkk/yii2-inspinia/assets';
+    public $sourcePath = '@vendor/rusli-nasir/yii2-inspinia/assets';
 }

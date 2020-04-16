@@ -11,7 +11,7 @@ use yii\widgets\Breadcrumbs;
 use common\widgets\Alert;
 
 AppAsset::register($this);
-$directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/lkk/yii2-inspinia/assets');
+$directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/rusli-nasir/yii2-inspinia/assets');
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
