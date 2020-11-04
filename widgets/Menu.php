@@ -1,6 +1,7 @@
 <?php
 namespace dxapp\themes\inspinia\widgets;
 
+use dxapp\themes\inspinia\BaseAsset;
 use Yii;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Url;
@@ -23,6 +24,15 @@ class Menu extends \yii\widgets\Menu
      * @inheritdoc
      */
     protected function renderItem($item)
+    {
+        if(isset($item['profile'])){
+            return $this->renderProfileMenu($item);
+        }else{
+            return $this->renderMenuItem($item);
+        }
+    }
+
+    protected function renderMenuItem($item)
     {
         if (isset($item['items'])) {
             $labelTemplate = '<a href="{url}">{label} <i class="fa fa-angle-left pull-right"></i></a>';
@@ -54,6 +64,54 @@ class Menu extends \yii\widgets\Menu
             ];
             return strtr($template, $replace);
         }
+    }
+
+    protected function renderProfileMenu($item)
+    {
+        $template = '<div class="{extend-class} profile-element">{avatar}{username}{dropdown-menu}{logo}</div>';
+
+        $profile = $item['profile'];
+        $username = isset($profile['username'])? $profile['username']: null;
+        $roleUser = isset($profile['role'])? $profile['role']: null;
+        $userMenu = null;
+        $lines=[];
+        if(isset($profile['menu'])){
+            $menuTemplate = "<a data-toggle=\"dropdown\" class=\"dropdown-toggle\" href=\"#\">
+                                <span class=\"block m-t-xs font-bold\">{username}</span>
+                                <span class=\"text-muted text-xs block\">{role} <b class=\"caret\"></b></span>
+                            </a><ul class=\"dropdown-menu animated fadeInRight m-t-xs\">{listmenu}</ul>";
+            if (!Yii::$app->user->isGuest)
+                $profile['menu'][] = ['label' => null, 'class' => 'dropdown-divider'];
+            $profile['menu'][] = ['label' => Yii::t('app','Logout {username}',['username' => $username]), 'url' => ['/site/logout']];
+
+            foreach ($profile['menu'] as $idx => $item){
+                $menu = $this->renderItem($item);
+                $lines[] = Html::tag('li',$menu);
+            }
+            $userMenu = strtr($menuTemplate,[
+                '{username}' => $username,
+                '{role}' => $roleUser,
+                '{listmenu}' => implode("\n", $lines)
+            ]);
+        }
+
+        if(isset($profile['user_avatar'])){
+            $assets = BaseAsset::register($this->view);
+            $useravatar = $profile['user_avatar']?:$assets->baseUrl .'/img/profile_small.jpg';
+//            if(!Yii::$app->user->isGuest){
+//                $userImg = Yii::$app->user->identity->avatar;
+//                $useravatar = $userImg?:$useravatar;
+//            };
+            $useravatar = Html::img($useravatar,['class' => 'rounded-circle']);
+        }
+        $replace = [
+            '{avatar}' => isset($profile['user_avatar'])?$useravatar:null,
+            '{username}' => $userMenu?null:"<span class=\"block m-t-xs font-bold\">{$username}</span>",
+            '{dropdown-menu}' => $userMenu,
+            '{extend-class}' => isset($profile['menu'])? 'dropdown':null,
+            '{logo}' => isset($profile['logo'])?$profile['logo']:null,
+        ];
+        return strtr($template, $replace);
     }
 
     /**
