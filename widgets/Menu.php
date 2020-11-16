@@ -102,7 +102,7 @@ class Menu extends \yii\widgets\Menu
 //                $userImg = Yii::$app->user->identity->avatar;
 //                $useravatar = $userImg?:$useravatar;
 //            };
-            $useravatar = Html::img($useravatar,['class' => 'rounded-circle']);
+            $useravatar = Html::img($useravatar,['class' => 'img-circle']);
         }
         $replace = [
             '{avatar}' => isset($profile['user_avatar'])?$useravatar:null,

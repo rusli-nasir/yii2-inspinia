@@ -3,17 +3,17 @@
 namespace dxapp\themes\inspinia;
 
 
-class AppAsset extends BaseAsset
+class LandingAppAsset extends BaseAsset
 {
-
     public $css = [
         'css/animate.css',
         'css/style.css'
     ];
     public $js = [
-        'js/plugins/metisMenu/jquery.metisMenu.js',
-        'js/plugins/slimscroll/jquery.slimscroll.min.js',
         'js/plugins/pace/pace.min.js',
+        'js/plugins/classie/classie.js',
+        'js/plugins/animated-header/cbpAnimatedHeader.js',
+        'js/plugins/wow/wow.min.js',
         'js/inspinia.js',
     ];
     public $depends = [

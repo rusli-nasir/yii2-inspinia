@@ -1,3 +1,19 @@
+<?php
+
+/* @var $this \yii\web\View */
+
+/**
+ * @var $title string
+ * @var $description string
+ * @var $image string
+ * @var $collapse_button boolean
+ * @var $close_button boolean
+ * @var $toolbar array
+ * @var $content string
+ * @var $footer string
+ */
+
+?>
 <div class="ibox float-e-margins">
     <?php if ($title): ?>
         <div class="ibox-title">

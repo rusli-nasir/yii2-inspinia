@@ -1,6 +1,6 @@
 Inspinia Admin Theme
 ====================
-v2.7.1
+v2.7.1 Bootstrap 3
 
 Fork from https://github.com/lkk/yii2-inspinia
 
