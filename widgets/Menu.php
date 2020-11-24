@@ -97,7 +97,7 @@ class Menu extends \yii\widgets\Menu
 
         if(isset($profile['user_avatar'])){
             $assets = BaseAsset::register($this->view);
-            $useravatar = $profile['user_avatar']?:$assets->baseUrl .'/img/profile_small.jpg';
+            $useravatar = $profile['user_avatar']?:$this->generateImageBase64($assets->basePath .'/img/profile_small.jpg');
 //            if(!Yii::$app->user->isGuest){
 //                $userImg = Yii::$app->user->identity->avatar;
 //                $useravatar = $userImg?:$useravatar;
@@ -234,5 +234,11 @@ class Menu extends \yii\widgets\Menu
             return true;
         }
         return false;
+    }
+    
+    protected function generateImageBase64($path){
+        $type = pathinfo($path, PATHINFO_EXTENSION);
+        $data = file_get_contents($path);
+        return 'data:image/' . $type . ';base64,' . base64_encode($data);
     }
 }
